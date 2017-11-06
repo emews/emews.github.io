@@ -52,7 +52,7 @@
 
 </head>
 
-<body id="swift-t">
+<body id="emews">
     <div class="container_12">
         <!-- header -->
         <div id="header-bg"></div>
@@ -61,9 +61,10 @@
             <div id="mover" style="visibility:hidden;"><img src="../images/uvula.png" width="20" height="8" /></div>
     </div>
     <ul id="nav">
-        <li><a href="http://www.mcs.anl.gov/~emews/tutorial">tutorial</a></li>
+        <li><a href="./resources.html">resources</a></li>
         <li><a href="./papers.html">papers</a></li>
-        <li class="last"><a href="./support.html">support</a></li>
+        <li><a href="./support.html">support</a></li>
+        <li class="last"><a href="./team.html">team</a>
     </ul>
     <div id="font-indicator">
         <div id="font-name"></div>
@@ -80,20 +81,34 @@
     <div class="grid_9">
         <h1 class="pagetitle">EMEWS: Extreme-scale Model Exploration with Swift</h1>
 
-        <h2 class="sc">Introduction</h2>
+        <!-- <h2 class="sc">Introduction</h2> -->
         <p>
           As high-performance computing resources have become increasingly available,
           new modes of computational processing and experimentation have become possible.
-           This tutorial presents the Extreme-scale Model Exploration with <a target="_blank" href="http://swift-lang.org/Swift-T/">Swift/T</a> (EMEWS)
-           framework for combining existing capabilities for model exploration approaches
-           (e.g., model calibration, metaheuristics, data assimilation) and simulations
-           (or any “black box” application code) with the <a target="_blank" href="http://swift-lang.org/Swift-T/">Swift/T</a>
-            parallel scripting
-           language to run scientific workflows on a variety of computing resources,
-            from desktop to academic clusters to <a target="_blank" href="https://www.top500.org/">Top 500</a> level supercomputers.
-
+           The Extreme-scale Model Exploration with Swift (EMEWS)
+           framework enables the direct integration of multi-language model exploration (ME) algorithms
+           while scaling dynamic computational experiments to very large numbers (millions)
+           of models on all major HPC platforms. EMEWS has been designed for any "black box"
+           application code, such as agent-based and microsimulation models or training of machine learning models,
+           that require multiple runs as part of heuristic model explorations. One of the main goals of EMEWS is to
+           democratize the use of large-scale computing resources
+           by making them accessible to more researchers in many more science domains.
+           EMEWS is built on the <a target="_blank" href="http://swift-lang.org/Swift-T/">Swift/T</a>
+            parallel scripting language.
+        </p>
+        <p>
+          The <a href="http://www.mcs.anl.gov/~emews/tutorial/">EMEWS tutorial</a> is the primary resource for using EMEWS.
+        </p>
+        <p>
+          For additional EMEWS resources, see the <a href="./resources.html">resources</a> page.
+        </p>
+        <p>
+          For EMEWS papers, see the <a href="./papers.html">papers</a> page.
         </p>
 
+        <p>
+          For support, including EMEWS mailing list information, see the <a href="./support.html">support</a> page.
+        </p>
 
     </div>
 
@@ -103,8 +118,8 @@
     <!-- footer -->
     <div id="footer">
         <ul>
-            <li><a href="./about.html">about</a></li>
-            <li class="last"><a href="https://github.com/emews">github</a></li>
+            <!-- <li><a href="./about.html">about</a></li> -->
+            <li class="last"><a href="https://github.com/emews">EMEWS on github</a></li>
         </ul>
         <div class="footer-blurb">The EMEWS project is supported by the National
           Institute of General Medical Sciences (R01GM115839), National Institute
