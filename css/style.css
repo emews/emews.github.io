@@ -492,9 +492,9 @@ h5 {
 }
 
 .footer-blurb {
-	text-align: left;
+	text-align: center;
 	margin-left: auto;
-    margin-right: auto;
+    	margin-right: auto;
 	line-height: 1.2em;
 }
 #footer a {
