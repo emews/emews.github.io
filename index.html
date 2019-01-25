@@ -55,6 +55,39 @@
         </p>
         <br/>
 
+        <h2>EMEWS Installation</h2>
+        <p>
+          EMEWS software can be most easily installed through the Spack package manager. If you don't have Spack installed, do the following, which will install Spack and set up Spack shell support: 
+          <pre>
+$ git clone https://github.com/spack/spack.git
+$ . spack/share/spack/setup-env.sh</pre>
+
+Different flavors of Swift/T can be installed depending on the type of EMEWS workflow you need.
+
+          <ul>
+            <li>For the most general flavor (Python and R-enabled):
+              <ul>
+                <li><code>$ spack install stc+python+r</code></li>
+              </ul>
+            </li>
+            <!-- <li>However, more simple variants are available as well: 
+                <ul>
+                    <li><code>$ spack install stc+python</code></li>
+                    <li><code>$ spack install stc+r</code></li>
+                    <li><code>$ spack install stc</code></li>
+                  </ul>
+            </li> -->
+          </ul>
+        </p>
+        <p>
+          Look <a target="_blank" href="http://swift-lang.github.io/swift-t/guide.html#_spack_tips">here</a> for information and tips to reduce the number of dependencies that need to be built by Spack by using already installed software. 
+          <br/>
+          Once Swift/T is installed, you can install <a target="_blank" href="https://github.com/emews/EQ-R">EQ/R</a> and <a target="_blank" href="https://github.com/emews/EQ-Py">EQ/Py</a> (manually or via Spack) to allow for R-based or Python-based model exploration. See the EMEWS tutorial (below) for more information.
+         
+        </p>
+  
+        <br/>
+
         <h2>EMEWS Tutorial</h2>
         <p>
           The <a href="http://www.mcs.anl.gov/~emews/tutorial/">EMEWS tutorial</a> is the primary resource for using EMEWS.
