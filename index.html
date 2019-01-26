@@ -62,13 +62,15 @@
 $ git clone https://github.com/spack/spack.git
 $ . spack/share/spack/setup-env.sh</pre>
 
-Different flavors of Swift/T can be installed depending on the type of EMEWS workflow you need.
-
+Different flavors of Swift/T can be installed depending on the type of EMEWS workflow you need. The Python and R-enabled Swift/T variant is recommended:
           <ul>
-            <li>For the most general flavor (Python and R-enabled):
-              <ul>
-                <li><code>$ spack install stc ^turbine+python+r</code></li>
-              </ul>
+                  <li> You'll need an R with RInside and Rcpp packages installed. It can be installed and activated with Spack:</li>
+                    <pre>
+$ spack install r-rinside 
+$ spack activate r-rinside </pre>
+
+                <li> Then Swift/T is installed:  <pre>$ spack install stc ^turbine+python+r</pre></li>
+
             </li>
             <!-- <li>However, more simple variants are available as well: 
                 <ul>
