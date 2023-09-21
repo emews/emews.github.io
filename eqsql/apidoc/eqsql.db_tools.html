@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>eqsql.db_tools module &#8212; EQ-SQL  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="eqsql.proxies module" href="eqsql.proxies.html" />
+    <link rel="prev" title="eqsql.eq module" href="eqsql.eq.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="eqsql.proxies.html" title="eqsql.proxies module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="eqsql.eq.html" title="eqsql.eq module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EQ-SQL  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="eqsql.html" accesskey="U">eqsql package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">eqsql.db_tools module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-eqsql.db_tools">
+<span id="eqsql-db-tools-module"></span><h1>eqsql.db_tools module<a class="headerlink" href="#module-eqsql.db_tools" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="eqsql.db_tools.init_eqsql_db">
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">init_eqsql_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_db_sql_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.init_eqsql_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and initialized an EQSQL postgresql database.</p>
+<dl class="simple">
+<dt>This will:</dt><dd><ol class="arabic simple">
+<li><p>Create a database “cluster” at the specified path.</p></li>
+<li><p>Start the server instance using that cluster.</p></li>
+<li><p>Create the specified user.</p></li>
+<li><p>Create the specified database in that cluster.</p></li>
+<li><p>Populate that database with tables etc. by executing the commands in the
+specified file.</p></li>
+<li><p>Stop the database server.</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_path</strong> (<em>str</em>) – the file path for the database cluster. This must not exist.</p></li>
+<li><p><strong>create_db_sql_file</strong> (<em>Optional</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em><em>]</em>) – a file containing the SQL to execute to create the database tables etc.
+If this is None (the default) the default EQSQL SQL schema will be used.</p></li>
+<li><p><strong>db_user</strong> – the database user name</p></li>
+<li><p><strong>db_name</strong> – the name of the database</p></li>
+<li><p><strong>db_host</strong> – the hostname where the database server is located</p></li>
+<li><p><strong>db_port</strong> – the port of the database server.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="eqsql.db_tools.reset_db">
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">reset_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.reset_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the database by deleting the contents of all the eqsql tables and restarting
+the emews task id generator sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_user</strong> (<em>str</em>) – the database user name</p></li>
+<li><p><strong>db_name</strong> (<em>str</em>) – the name of the database</p></li>
+<li><p><strong>db_host</strong> (<em>str</em>) – the hostname where the database server is located</p></li>
+<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port of the database server.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="eqsql.db_tools.start_db">
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">start_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_ctl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pg_ctl'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.start_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts the postgresql database cluster on the specified path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the file path for the database cluster to start</p></li>
+<li><p><strong>pg_ctl</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – path to postgresql’s pg_ctl executable</p></li>
+<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port number to start the db on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="eqsql.db_tools.stop_db">
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">stop_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_ctl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pg_ctl'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.stop_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stops the postgresql database cluster on the specified path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the file path for the database cluster to stop</p></li>
+<li><p><strong>pg_ctl</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – path to postgresql’s pg_ctl executable</p></li>
+<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port number of the database to stop</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">eqsql.db_tools module</a><ul>
+<li><a class="reference internal" href="#eqsql.db_tools.init_eqsql_db"><code class="docutils literal notranslate"><span class="pre">init_eqsql_db()</span></code></a></li>
+<li><a class="reference internal" href="#eqsql.db_tools.reset_db"><code class="docutils literal notranslate"><span class="pre">reset_db()</span></code></a></li>
+<li><a class="reference internal" href="#eqsql.db_tools.start_db"><code class="docutils literal notranslate"><span class="pre">start_db()</span></code></a></li>
+<li><a class="reference internal" href="#eqsql.db_tools.stop_db"><code class="docutils literal notranslate"><span class="pre">stop_db()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="eqsql.eq.html"
+                          title="previous chapter">eqsql.eq module</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="eqsql.proxies.html"
+                          title="next chapter">eqsql.proxies module</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/eqsql.db_tools.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="eqsql.proxies.html" title="eqsql.proxies module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="eqsql.eq.html" title="eqsql.eq module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">EQ-SQL  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="eqsql.html" >eqsql package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">eqsql.db_tools module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2023, UChicago Argonne, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>
