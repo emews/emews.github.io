@@ -55,50 +55,11 @@
         </p>
         <br/>
 
-        <h2>EMEWS Installation</h2>
-        <p>
-          EMEWS software can be most easily installed through the <a target="_blank" href="https://spack.readthedocs.io/en/latest/">Spack package manager</a>. If you don't have Spack installed, do the following, which will install Spack and set up Spack shell support: 
-          <pre>
-$ git clone https://github.com/spack/spack.git
-$ . spack/share/spack/setup-env.sh</pre>
-
-Different flavors of Swift/T can be installed depending on the type of EMEWS workflow you need. The Python and R-enabled Swift/T variant is recommended:
-          <ul>
-                  <li> You'll need an R with RInside and Rcpp packages installed. If you don't already have R installed, you can optionally install it with Spack:</li>
-                    <pre>
-## Optional R, Rcpp and RInside Install with Spack
-$ spack install r-rinside 
-$ spack activate r-rinside </pre>
-
-                <li> Then Swift/T is installed:  <pre>$ spack install stc ^turbine+python+r</pre></li>
-
-            </li>
-            <!-- <li>However, more simple variants are available as well: 
-                <ul>
-                    <li><code>$ spack install stc+python</code></li>
-                    <li><code>$ spack install stc+r</code></li>
-                    <li><code>$ spack install stc</code></li>
-                  </ul>
-            </li> -->
-          </ul>
-        </p>
-        <p>
-          Look <a target="_blank" href="http://swift-lang.github.io/swift-t/guide.html#_spack_tips">here</a> for information and tips to reduce the number of dependencies that need to be built by Spack by using already installed software. 
-          <br/>
-          Once Swift/T is installed, you can install <a target="_blank" href="https://github.com/emews/EQ-R">EQ/R</a> and <a target="_blank" href="https://github.com/emews/EQ-Py">EQ/Py</a> (manually or via Spack) to allow for R-based or Python-based model exploration. See the EMEWS tutorial (below) for more information.
-         
-        </p>
-  
-        <br/>
-
         <h2>EMEWS Tutorial</h2>
         <p>
-          The <a href="http://www.mcs.anl.gov/~emews/tutorial/">EMEWS tutorial</a> is the primary resource for using EMEWS.
+          The new <a href="https://jozik.github.io/emews_next_gen_tutorial_tests/">EMEWS tutorial</a> is the primary resource for using EMEWS. Note that
+          it is currently a work in progress. The previous EMEWS tutorial, which does <b>not</b> include EMEWS DB, can be found <a href="http://www.mcs.anl.gov/~emews/tutorial/">here</a>.
         </p>
-        <p>
-        <a href="http://www.mcs.anl.gov/~emews/tutorial/"><img src="images/tutorial.png" width="75%" style="left;  border: 1px solid #999; "></a>
-        </p>
-        <br/>
 
         <h2 >EMEWS Resources</h2>
         <p>
