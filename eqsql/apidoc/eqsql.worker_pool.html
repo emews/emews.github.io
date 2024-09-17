@@ -95,7 +95,7 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py class">
 <dt class="sig sig-object py" id="eqsql.worker_pool.ScheduledPool">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">ScheduledPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">ScheduledPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.worker_pool.ScheduledPool.cancel">
@@ -193,7 +193,7 @@ that worker pool.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.start_scheduled_pool">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_scheduled_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_scheduled_pool" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_scheduled_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_scheduled_pool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Starts a worker pool on a scheduled resource, i.e., a resource that queues jobs
 using some sort of scheduler, e.g., slurm.</p>
 <dl class="field-list simple">
@@ -204,9 +204,9 @@ using some sort of scheduler, e.g., slurm.</p>
 <li><p><strong>exp_id</strong> (<em>str</em>) – the experiment id for the experiment that is running the pool</p></li>
 <li><p><strong>cfg_params</strong> (<em>Dict</em>) – the parameters used to start the pool</p></li>
 <li><p><strong>scheduler</strong> (<em>str</em>) – scheduled resource schedule type - slurm, etc.</p></li>
-<li><p><strong>fx</strong> – a FuncXExecutor instance. If this is None, then the assumption is that the call
+<li><p><strong>gcx</strong> (<em>Executor</em>) – a globus compute Executor instance. If this is None, then the assumption is that the call
 to this function is running on the resource where the pool is to be launched. If
-this is not None, then the FuncXExcutor will be used to launch the pool remotely.</p></li>
+this is not None, then the executor will be used to launch the pool remotely.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
