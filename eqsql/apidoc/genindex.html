@@ -45,11 +45,17 @@
  | <a href="#D"><strong>D</strong></a>
  | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#Q"><strong>Q</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="A">A</h2>
@@ -57,29 +63,81 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.proxies.html#eqsql.proxies.app">app() (in module eqsql.proxies)</a>
 </li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.are_queues_empty">are_queues_empty() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.are_queues_empty">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.are_queues_empty">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.are_queues_empty">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.are_queues_empty">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.as_completed">as_completed() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.as_completed">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.as_completed">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.as_completed">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.as_completed">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.LocalPool.cancel">cancel() (eqsql.worker_pool.LocalPool method)</a>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.cancel">cancel() (eqsql.task_queues.core.Future method)</a>
 
       <ul>
+        <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.LocalPool.cancel">(eqsql.worker_pool.LocalPool method)</a>
+</li>
         <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.ScheduledPool.cancel">(eqsql.worker_pool.ScheduledPool method)</a>
+</li>
+      </ul></li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.cancel_tasks">cancel_tasks() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.cancel_tasks">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.cancel_tasks">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.cancel_tasks">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.cancel_tasks">(in module eqsql.task_queues.emews_service)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus.CANCELED">CANCELED (eqsql.task_queues.core.TaskStatus attribute)</a>
+</li>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.cfg_file_to_dict">cfg_file_to_dict() (in module eqsql.worker_pool)</a>
 </li>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.cfg_tofile">cfg_tofile() (in module eqsql.worker_pool)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.clear_queues">clear_queues() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.close">close() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus.COMPLETE">COMPLETE (eqsql.task_queues.core.TaskStatus attribute)</a>
 </li>
   </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.done">done() (eqsql.task_queues.core.Future method)</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.proxies.html#eqsql.proxies.dump_proxies">dump_proxies() (in module eqsql.proxies)</a>
 </li>
@@ -103,8 +161,43 @@
         <li><a href="eqsql.proxies.html#module-eqsql.proxies">module</a>
 </li>
       </ul></li>
+      <li>
+    eqsql.task_queues.core
+
+      <ul>
+        <li><a href="eqsql.task_queues.core.html#module-eqsql.task_queues.core">module</a>
+</li>
+      </ul></li>
+      <li>
+    eqsql.task_queues.emews_service
+
+      <ul>
+        <li><a href="eqsql.task_queues.emews_service.html#module-eqsql.task_queues.emews_service">module</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    eqsql.task_queues.gc_queue
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#module-eqsql.task_queues.gc_queue">module</a>
+</li>
+      </ul></li>
+      <li>
+    eqsql.task_queues.local_queue
+
+      <ul>
+        <li><a href="eqsql.task_queues.local_queue.html#module-eqsql.task_queues.local_queue">module</a>
+</li>
+      </ul></li>
+      <li>
+    eqsql.task_queues.service_queue
+
+      <ul>
+        <li><a href="eqsql.task_queues.service_queue.html#module-eqsql.task_queues.service_queue">module</a>
+</li>
+      </ul></li>
       <li>
     eqsql.worker_pool
 
@@ -118,8 +211,60 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.ResultStatus.FAILURE">FAILURE (eqsql.task_queues.core.ResultStatus attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.format_pool_exp_id">format_pool_exp_id() (in module eqsql.worker_pool)</a>
 </li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future">Future (class in eqsql.task_queues.core)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue">GCTaskQueue (class in eqsql.task_queues.gc_queue)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.get_priorities">get_priorities() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.get_priorities">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.get_priorities">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.get_priorities">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.get_priorities">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.get_status">get_status() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.get_status">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.get_status">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.get_status">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.get_status">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.get_worker_pools">get_worker_pools() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.get_worker_pools">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.get_worker_pools">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.get_worker_pools">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.get_worker_pools">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -128,10 +273,18 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.proxies.html#eqsql.proxies.init">init() (in module eqsql.proxies)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.db_tools.html#eqsql.db_tools.init_eqsql_db">init_eqsql_db() (in module eqsql.db_tools)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.init_task_queue">init_task_queue() (in module eqsql.task_queues.gc_queue)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.init_task_queue">(in module eqsql.task_queues.local_queue)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.init_task_queue">(in module eqsql.task_queues.service_queue)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -143,6 +296,8 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.LocalPool">LocalPool (class in eqsql.worker_pool)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue">LocalTaskQueue (class in eqsql.task_queues.local_queue)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -158,16 +313,96 @@
 </li>
         <li><a href="eqsql.proxies.html#module-eqsql.proxies">eqsql.proxies</a>
 </li>
+        <li><a href="eqsql.task_queues.core.html#module-eqsql.task_queues.core">eqsql.task_queues.core</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#module-eqsql.task_queues.emews_service">eqsql.task_queues.emews_service</a>
+</li>
+        <li><a href="eqsql.task_queues.gc_queue.html#module-eqsql.task_queues.gc_queue">eqsql.task_queues.gc_queue</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#module-eqsql.task_queues.local_queue">eqsql.task_queues.local_queue</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#module-eqsql.task_queues.service_queue">eqsql.task_queues.service_queue</a>
+</li>
         <li><a href="eqsql.worker_pool.html#module-eqsql.worker_pool">eqsql.worker_pool</a>
 </li>
       </ul></li>
   </ul></td>
 </tr></table>
 
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.ping">ping() (in module eqsql.task_queues.emews_service)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.pop_completed">pop_completed() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.pop_completed">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.pop_completed">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.pop_completed">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.pop_in_queue">pop_in_queue() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.pop_out_queue">pop_out_queue() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.priority">priority (eqsql.task_queues.core.Future property)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.push_in_queue">push_in_queue() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.push_out_queue">push_out_queue() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Q">Q</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.query_more_tasks">query_more_tasks() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.query_result">query_result() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.query_result">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.query_result">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.query_result">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.query_result">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.query_task">query_task() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus.QUEUED">QUEUED (eqsql.task_queues.core.TaskStatus attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.random">random() (in module eqsql.task_queues.local_queue)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.report_task">report_task() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus.REQUEUED">REQUEUED (eqsql.task_queues.core.TaskStatus attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.db_tools.html#eqsql.db_tools.reset_db">reset_db() (in module eqsql.db_tools)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.result">result() (eqsql.task_queues.core.Future method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.ResultStatus">ResultStatus (class in eqsql.task_queues.core)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus.RUNNING">RUNNING (eqsql.task_queues.core.TaskStatus attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -177,13 +412,23 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.ScheduledPool">ScheduledPool (class in eqsql.worker_pool)</a>
 </li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.select_task_payload">select_task_payload() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.select_task_result">select_task_result() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue">ServiceTaskQueue (class in eqsql.task_queues.service_queue)</a>
+</li>
+      <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.shutdown">shutdown() (in module eqsql.task_queues.emews_service)</a>
+</li>
+      <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.start">start() (in module eqsql.task_queues.emews_service)</a>
+</li>
       <li><a href="eqsql.db_tools.html#eqsql.db_tools.start_db">start_db() (in module eqsql.db_tools)</a>
 </li>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.start_local_pool">start_local_pool() (in module eqsql.worker_pool)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.start_scheduled_pool">start_scheduled_pool() (in module eqsql.worker_pool)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.status">status (eqsql.task_queues.core.Future property)</a>
 </li>
       <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.LocalPool.status">status() (eqsql.worker_pool.LocalPool method)</a>
 
@@ -191,7 +436,81 @@
         <li><a href="eqsql.worker_pool.html#eqsql.worker_pool.ScheduledPool.status">(eqsql.worker_pool.ScheduledPool method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="eqsql.db_tools.html#eqsql.db_tools.stop_db">stop_db() (in module eqsql.db_tools)</a>
+</li>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.stop_worker_pool">stop_worker_pool() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.StopConditionException">StopConditionException</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.submit_task">submit_task() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.submit_task">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.submit_task">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_task">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+      </ul></li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.submit_tasks">submit_tasks() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.submit_tasks">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.submit_tasks">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_tasks">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.submit_tasks">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.ResultStatus.SUCCESS">SUCCESS (eqsql.task_queues.core.ResultStatus attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue">TaskQueue (class in eqsql.task_queues.core)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskStatus">TaskStatus (class in eqsql.task_queues.core)</a>
+</li>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TimeoutError">TimeoutError</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.TaskQueue.update_priorities">update_priorities() (eqsql.task_queues.core.TaskQueue method)</a>
+
+      <ul>
+        <li><a href="eqsql.task_queues.gc_queue.html#eqsql.task_queues.gc_queue.GCTaskQueue.update_priorities">(eqsql.task_queues.gc_queue.GCTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.update_priorities">(eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.service_queue.html#eqsql.task_queues.service_queue.ServiceTaskQueue.update_priorities">(eqsql.task_queues.service_queue.ServiceTaskQueue method)</a>
+</li>
+        <li><a href="eqsql.task_queues.emews_service.html#eqsql.task_queues.emews_service.update_priorities">(in module eqsql.task_queues.emews_service)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.local_queue.html#eqsql.task_queues.local_queue.LocalTaskQueue.update_task">update_task() (eqsql.task_queues.local_queue.LocalTaskQueue method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future.worker_pool">worker_pool (eqsql.task_queues.core.Future property)</a>
 </li>
   </ul></td>
 </tr></table>
