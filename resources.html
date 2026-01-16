@@ -46,36 +46,43 @@
         <h1>EMEWS Resources</h1>
 <br/>
         <h2>EMEWS tutorial</h2>
-        <p><a target="_blank" href="http://www.mcs.anl.gov/~emews/tutorial/">http://www.mcs.anl.gov/~emews/tutorial/</a></p>
+        <p><a target="_blank" href="https://emews.org/emews-tutorial">https://emews.org/emews-tutorial</a></p>
         <p>The EMEWS tutorial presents an overview of EMEWS, the Swift/T parallel scripting language, EMEWS templates, and a number of use-cases, starting with a simple agent-based model parameter sweep, and ending
 with a complex adaptive parameter space exploration workflow coordinating ensembles of distributed (MPI) simulations.
 The use-cases are available for interested parties to download and run on their own. While the example models in the tutorial utilize agent-based models,
 EMEWS can be applied to any computational modeling method requiring heuristic model exploration.</p>
+
+
 <!-- <br/> -->
-        <h2>EMEWS Model Exploration Library Archive (MELA)</h2>
-        <p><a target="_blank" href="https://github.com/emews/mela">https://github.com/emews/mela</a></p>
-        <p>The EMEWS Model Exploration Library Archive (MELA) is a collection of model exploration (ME) modules, which can be
-directly incorporated into EMEWS workflows. The ME modules are written in R or Python (used with EQ/R and EQ/Py,
-respectively) and come with descriptions of the underlying ME algorithm, the communication protocol and the ability to
-run standalone (i.e., in their original language) ME tests.</p>
+
+<h2>EMEWS Creator</h2>
+        <p><a target="_blank" href="https://github.com/emews/emews-project-creator">https://github.com/emews/emews-project-creator</a></p>
+        <p>EMEWS Creator is a Python application for creating workflow projects for EMEWS from the command line. The project consists of the canonical EMEWS directory layout and various files that can be customized by the user for their particular use case. Further information on the EMEWS Creator can be found in the <a target="_blank" href="https://emews.org/emews-tutorial/#creating_emews_projects">EMEWS Creator section of the EMEWS tutorial</a>.</p>
+
 <!-- <br/> -->
         <h2>EMEWS Queues for R (EQ/R)</h2>
         <p><a target="_blank" href="https://github.com/emews/EQ-R">https://github.com/emews/EQ-R</a></p>
         <p>EQ/R is an R-based Swift/T resident task extension that allows Swift/T workflows to communicate with a persistent
 embedded R interpreter on a worker process via blocking queues. Using EQ/R, an R-based ME algorithm can be used to
-control and define an ensemble of model runs.</p>
+control and define an ensemble of model runs. More information can be found in the <a target="_blank" href="https://emews.org/emews-tutorial/#eqr_top">EQ/R section of the EMEWS tutorial</a>. </p>
 
 <!-- <br/> -->
         <h2>EMEWS Queues for Python (EQ/Py)</h2>
         <p><a target="_blank" href="https://github.com/emews/EQ-Py">https://github.com/emews/EQ-Py</a></p>
         <p>EQ/Py is a Python-based Swift/T resident task extension that allows Swift/T workflows to communicate with a persistent
 embedded Python interpreter on a worker process via blocking queues. Using EQ/Py, a Python-based ME algorithm can be used to
-control and define an ensemble of model runs.</p>
+control and define an ensemble of model runs. More information can be found in the <a target="_blank" href="https://emews.org/emews-tutorial/#eqpy_top">EQ/Py section of the EMEWS tutorial</a>. </p>
 
 <!-- <br/> -->
-        <h2>EMEWS templates</h2>
-        <p><a target="_blank" href="https://github.com/emews/emews-lazybones-templates">https://github.com/emews/emews-lazybones-templates</a></p>
-        <p>EMEWS templates use the <a target="_blank" href="https://github.com/pledbrook/lazybones">Lazybones</a> project creation tool to generate EMEWS projects.</p>
+<h2>EMEWS Queues for SQL (EQ-SQL)</h2>
+        <p><a target="_blank" href="https://github.com/emews/EQ-SQL">https://github.com/emews/EQ-SQL</a></p>
+        <p>EQ-SQL is our newest decoupled architecture and task API for distributing workflows on heterogeneous computing resources. It provides more flexibility and robustness for running longer and heterogeneous workflows. More information can be found in the <a target="_blank" href="https://emews.org/emews-tutorial/#eqsql_top">EQ-SQL section of the EMEWS tutorial</a>. </p>
+
+<!-- <br/> -->
+<h2>EMEWS Bayesian optimization with EQ-SQL</h2>
+        <p><a target="_blank" href="https://github.com/emews/emews_tutorial_BO">https://github.com/emews/emews_tutorial_BO</a></p>
+        <p>These are worked examples of optimizing a simple simulation model (a <a target="_blank" href="https://repast.github.io/repast4py.site/guide/user_guide.html#_tutorial_3_the_zombies_model">Zombies demonstration model</a>, distributed with <a target="_blank" href="https://repast.github.io/repast4py.site">Repast4Py</a>) using EQ-SQL. Both Python and R Bayesian optimization code are demonstrated, with both a local and remote deployment.</p>
+
         <!-- <ul> -->
             <!-- <li>EMEWS tutorial: <a target="_blank" href="http://www.mcs.anl.gov/~emews/tutorial/">http://www.mcs.anl.gov/~emews/tutorial/</a></li> -->
             <!-- <li>EMEWS Model Exploration Library Archive (MELA): <a target="_blank" href="https://github.com/emews/mela">https://github.com/emews/mela</a></li> -->
@@ -83,6 +90,13 @@ control and define an ensemble of model runs.</p>
             <!-- <li>EMEWS Queues for Python (EQ/Py): <a target="_blank" href="https://github.com/emews/EQ-Py">https://github.com/emews/EQ-Py</a></li> -->
             <!-- <li class="last">EMEWS templates: <a target="_blank" href="https://github.com/emews/emews-lazybones-templates">https://github.com/emews/emews-lazybones-templates</a></li> -->
         <!-- </ul> -->
+<!-- <br/> -->
+        <h2>EMEWS Model Exploration Library Archive (MELA)</h2>
+        <p><a target="_blank" href="https://github.com/emews/mela">https://github.com/emews/mela</a></p>
+        <p>The EMEWS Model Exploration Library Archive (MELA) is a collection of model exploration (ME) modules, which can be
+directly incorporated into EMEWS workflows. The ME modules are written in R or Python (used with EQ/R and EQ/Py,
+respectively) and come with descriptions of the underlying ME algorithm, the communication protocol and the ability to
+run standalone (i.e., in their original language) ME tests.</p>
     </div>
     </div>
   </div>
@@ -94,8 +108,8 @@ control and define an ensemble of model runs.</p>
       <p>The EMEWS project is supported by the National
         Institute of General Medical Sciences (R01GM115839), National Institute
         on Drug Abuse (R01DA039934), National Institute on Aging (R01AG047869) of the National
-        Institutes of Health, and the National Science Foundation under Grant
-        DEB1516428. The content is solely the responsibility of the authors
+        Institutes of Health, and the National Science Foundation under Grants
+        DEB1516428 and 2200234. The content is solely the responsibility of the authors
         and does not necessarily represent the official views of the National
         Institutes of Health or the National Science Foundation.
       </p>
