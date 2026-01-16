@@ -1,26 +1,22 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>eqsql.task_queues.service_queue module &#8212; EQ-SQL  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=ad52900a" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="eqsql.task_queues.emews_service module" href="eqsql.task_queues.emews_service.html" />
     <link rel="prev" title="eqsql.task_queues.gc_queue module" href="eqsql.task_queues.gc_queue.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -47,29 +43,29 @@
           <div class="body" role="main">
             
   <section id="module-eqsql.task_queues.service_queue">
-<span id="eqsql-task-queues-service-queue-module"></span><h1>eqsql.task_queues.service_queue module<a class="headerlink" href="#module-eqsql.task_queues.service_queue" title="Permalink to this heading">¶</a></h1>
+<span id="eqsql-task-queues-service-queue-module"></span><h1>eqsql.task_queues.service_queue module<a class="headerlink" href="#module-eqsql.task_queues.service_queue" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eqsql.task_queues.service_queue.</span></span><span class="sig-name descname"><span class="pre">ServiceTaskQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue" title="Permalink to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">eqsql.task_queues.service_queue.</span></span><span class="sig-name descname"><span class="pre">ServiceTaskQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Task queue protocol for submitting, manipulating and
 retrieving tasks</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>service_url</strong> (<em>str</em>) – </p></li>
-<li><p><strong>db_params</strong> (<em>DBParameters</em>) – </p></li>
+<li><p><strong>service_url</strong> (<em>str</em>)</p></li>
+<li><p><strong>db_params</strong> (<em>DBParameters</em>)</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.are_queues_empty">
-<span class="sig-name descname"><span class="pre">are_queues_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eq_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.are_queues_empty" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">are_queues_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eq_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.are_queues_empty" title="Link to this definition">¶</a></dt>
 <dd><p>Returns whether or not either of the input or output queues are empty,
 optionally of a specified task type.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>eq_type</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the optional task type to check for.</p>
+<dd class="field-odd"><p><strong>eq_type</strong> (<em>int</em>) – the optional task type to check for.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True if the queues are empty, otherwise False.</p>
@@ -82,7 +78,7 @@ optionally of a specified task type.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.as_completed">
-<span class="sig-name descname"><span class="pre">as_completed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.as_completed" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">as_completed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.as_completed" title="Link to this definition">¶</a></dt>
 <dd><p>Returns a generator over the <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> in the <code class="docutils literal notranslate"><span class="pre">futures</span></code> argument that yields
 Futures as they complete. The  <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> are checked for completion by iterating over all of the
 ones that have not yet completed and checking for a result. At the end of each iteration, the
@@ -94,9 +90,9 @@ A <code class="xref py py-class docutils literal notranslate"><span class="pre">
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>futures</strong> (<em>List</em><em>[</em><a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a><em>]</em>) – the List of  <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> to iterate over and return as they complete.</p></li>
 <li><p><strong>pop</strong> (<em>bool</em>) – if true, completed futures will be popped off of the futures argument List.</p></li>
-<li><p><strong>timeout</strong> (<em>Optional</em><em>[</em><em>float</em><em>]</em>) – if the time taken for futures to completed is greater than this value, then
+<li><p><strong>timeout</strong> (<em>float</em>) – if the time taken for futures to completed is greater than this value, then
 raise <code class="xref py py-class docutils literal notranslate"><span class="pre">TimeoutError</span></code>.</p></li>
-<li><p><strong>n</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – yield this many completed Futures and then stop iteration.</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – yield this many completed Futures and then stop iteration.</p></li>
 <li><p><strong>batch_size</strong> (<em>int</em>) – retrieve this many completed futures, before yielding. Assuming a batch_size &gt; 1,
 the remotely executing code will retrieve this many results before returning them to the
 locally executing code. Consequently, this greatly reduces communication overhead, and
@@ -122,7 +118,7 @@ can improve the performance of a remote queue.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.cancel_tasks">
-<span class="sig-name descname"><span class="pre">cancel_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.cancel_tasks" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">cancel_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.cancel_tasks" title="Link to this definition">¶</a></dt>
 <dd><p>Cancels the specified <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -139,7 +135,7 @@ can improve the performance of a remote queue.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.get_priorities">
-<span class="sig-name descname"><span class="pre">get_priorities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_priorities" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_priorities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_priorities" title="Link to this definition">¶</a></dt>
 <dd><p>Gets the priorities of the specified tasks.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -157,7 +153,7 @@ if the query has failed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.get_status">
-<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_status" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_status" title="Link to this definition">¶</a></dt>
 <dd><p>Gets the status (queued, running, etc.) of the specified tasks</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -176,7 +172,7 @@ status of that task as a <code class="xref py py-class docutils literal notransl
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.get_worker_pools">
-<span class="sig-name descname"><span class="pre">get_worker_pools</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_worker_pools" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_worker_pools</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.get_worker_pools" title="Link to this definition">¶</a></dt>
 <dd><p>Gets the worker pools on which the specified list of <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> are running, if any.
 All the specified <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> must have been submitted by the same task queue (i.e., they
 are all in the same eqsql database).</p>
@@ -187,17 +183,17 @@ second is that <code class="xref py py-class docutils literal notranslate"><span
 selected for execution yet.</p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>futures</strong> (<em>List</em><em>[</em><a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a><em>]</em>) – </p>
+<dd class="field-even"><p><strong>futures</strong> (<em>List</em><em>[</em><a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a><em>]</em>)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>List</em>[<em>Tuple</em>[<a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a>, <em>Optional</em>[str]]]</p>
+<dd class="field-odd"><p><em>List</em>[<em>Tuple</em>[<a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a>, str | None]]</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.pop_completed">
-<span class="sig-name descname"><span class="pre">pop_completed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.pop_completed" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">pop_completed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sleep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.pop_completed" title="Link to this definition">¶</a></dt>
 <dd><p>Pops and returns the first completed future from the specified List
 of Futures.</p>
 <dl class="field-list simple">
@@ -223,7 +219,7 @@ of <code class="xref py py-class docutils literal notranslate"><span class="pre"
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.query_result">
-<span class="sig-name descname"><span class="pre">query_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eq_task_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.query_result" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">query_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eq_task_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.query_result" title="Link to this definition">¶</a></dt>
 <dd><p>Queries for the result of the specified task.</p>
 <p>The query repeatedly polls for a result. The polling interval is specified by
 the delay such that the first interval is defined by the initial delay value
@@ -251,7 +247,7 @@ for the failure (<code class="docutils literal notranslate"><span class="pre">EQ
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.submit_task">
-<span class="sig-name descname"><span class="pre">submit_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eq_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_task" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">submit_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eq_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_task" title="Link to this definition">¶</a></dt>
 <dd><p>Submits work of the specified type and priority with the specified
 payload, returning the <code class="xref py py-class docutils literal notranslate"><span class="pre">status</span></code> and the <code class="xref py py-class docutils literal notranslate"><span class="pre">Future</span></code> encapsulating the submission.</p>
 <dl class="field-list simple">
@@ -261,7 +257,7 @@ payload, returning the <code class="xref py py-class docutils literal notranslat
 <li><p><strong>eq_type</strong> (<em>int</em>) – the type of work</p></li>
 <li><p><strong>payload</strong> (<em>str</em>) – the work payload</p></li>
 <li><p><strong>priority</strong> (<em>int</em>) – the priority of this work</p></li>
-<li><p><strong>tag</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – an optional metadata tag for the task</p></li>
+<li><p><strong>tag</strong> (<em>str</em>) – an optional metadata tag for the task</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -269,14 +265,14 @@ payload, returning the <code class="xref py py-class docutils literal notranslat
 and if successful, a <code class="xref py py-class docutils literal notranslate"><span class="pre">Future</span></code> representing the submitted task otherwise None.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>Tuple</em>[<a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.ResultStatus" title="eqsql.task_queues.core.ResultStatus"><em>ResultStatus</em></a>, <em>Optional</em>[<a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a>]]</p>
+<dd class="field-odd"><p><em>Tuple</em>[<a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.ResultStatus" title="eqsql.task_queues.core.ResultStatus"><em>ResultStatus</em></a>, <a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a> | None]</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.submit_tasks">
-<span class="sig-name descname"><span class="pre">submit_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eq_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_tasks" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">submit_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eq_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.submit_tasks" title="Link to this definition">¶</a></dt>
 <dd><p>Submits work of the specified type and priority with the specified
 payloads, returning the <code class="xref py py-class docutils literal notranslate"><span class="pre">status</span></code> and the <code class="xref py py-class docutils literal notranslate"><span class="pre">futures</span></code>
 encapsulating the submission.</p>
@@ -287,7 +283,7 @@ encapsulating the submission.</p>
 <li><p><strong>eq_type</strong> (<em>int</em>) – the type of work</p></li>
 <li><p><strong>payload</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – a list of the work payloads</p></li>
 <li><p><strong>priority</strong> (<em>int</em>) – the priority of this work</p></li>
-<li><p><strong>tag</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – an optional metadata tag for the tasks</p></li>
+<li><p><strong>tag</strong> (<em>str</em>) – an optional metadata tag for the tasks</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -303,13 +299,13 @@ the list of <code class="xref py py-class docutils literal notranslate"><span cl
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.ServiceTaskQueue.update_priorities">
-<span class="sig-name descname"><span class="pre">update_priorities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_priority</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.update_priorities" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_priorities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">futures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_priority</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.ServiceTaskQueue.update_priorities" title="Link to this definition">¶</a></dt>
 <dd><p>Updates the priority of the specified <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> to the new_priority.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>futures</strong> (<em>List</em><em>[</em><a class="reference internal" href="eqsql.task_queues.core.html#eqsql.task_queues.core.Future" title="eqsql.task_queues.core.Future"><em>Future</em></a><em>]</em>) – the <code class="xref py py-class docutils literal notranslate"><span class="pre">Futures</span></code> to update.</p></li>
-<li><p><strong>new_priority</strong> (<em>Union</em><em>[</em><em>int</em><em>, </em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – the priority to update to. If this is a single integer then
+<li><p><strong>new_priority</strong> (<em>int</em><em> | </em><em>List</em><em>[</em><em>int</em><em>]</em>) – the priority to update to. If this is a single integer then
 all the specified tasks are updated to that priority. If this is a
 List of ints then each task is updated with the corresponding priority, i.e.,
 the first task in the <code class="docutils literal notranslate"><span class="pre">futures</span></code> is updated with the first priority in the new_priority
@@ -334,7 +330,7 @@ otherwise (ResultStatus.FAILURE, []).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.task_queues.service_queue.init_task_queue">
-<span class="sig-prename descclassname"><span class="pre">eqsql.task_queues.service_queue.</span></span><span class="sig-name descname"><span class="pre">init_task_queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retry_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.init_task_queue" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.task_queues.service_queue.</span></span><span class="sig-name descname"><span class="pre">init_task_queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">service_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_user</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">retry_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.task_queues.service_queue.init_task_queue" title="Link to this definition">¶</a></dt>
 <dd><p>Initializes and returns an <code class="xref py py-class docutils literal notranslate"><span class="pre">LocalTaskQueue</span></code> class instance with the specified parameters.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -343,15 +339,15 @@ otherwise (ResultStatus.FAILURE, []).</p>
 <li><p><strong>user</strong> – the eqsql database user</p></li>
 <li><p><strong>port</strong> – the eqsql database port</p></li>
 <li><p><strong>db_name</strong> (<em>str</em>) – the eqsql database name</p></li>
-<li><p><strong>password</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – the eqdql database password (if there is one)</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – the eqdql database password (if there is one)</p></li>
 <li><p><strong>retry_threshold</strong> – if a DB connection cannot be established
 (e.g, there are currently too many connections),
 then retry <code class="docutils literal notranslate"><span class="pre">retry_threshold</span></code> many times to establish a connection. There
 will be random few second delay betwen each retry.</p></li>
-<li><p><strong>service_url</strong> (<em>str</em>) – </p></li>
-<li><p><strong>db_host</strong> (<em>str</em>) – </p></li>
-<li><p><strong>db_user</strong> (<em>str</em>) – </p></li>
-<li><p><strong>db_port</strong> (<em>int</em>) – </p></li>
+<li><p><strong>service_url</strong> (<em>str</em>)</p></li>
+<li><p><strong>db_host</strong> (<em>str</em>)</p></li>
+<li><p><strong>db_user</strong> (<em>str</em>)</p></li>
+<li><p><strong>db_port</strong> (<em>int</em>)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -370,7 +366,7 @@ will be random few second delay betwen each retry.</p></li>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
@@ -413,7 +409,7 @@ will be random few second delay betwen each retry.</p></li>
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
@@ -421,13 +417,13 @@ will be random few second delay betwen each retry.</p></li>
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -448,8 +444,8 @@ will be random few second delay betwen each retry.</p></li>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, UChicago Argonne, LLC.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    &#169; Copyright 2023, UChicago Argonne, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     </div>
   </body>
 </html>

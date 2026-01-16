@@ -1,26 +1,22 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>eqsql.db_tools module &#8212; EQ-SQL  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=ad52900a" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="eqsql.proxies module" href="eqsql.proxies.html" />
     <link rel="prev" title="eqsql.task_queues.emews_service module" href="eqsql.task_queues.emews_service.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -47,10 +43,10 @@
           <div class="body" role="main">
             
   <section id="module-eqsql.db_tools">
-<span id="eqsql-db-tools-module"></span><h1>eqsql.db_tools module<a class="headerlink" href="#module-eqsql.db_tools" title="Permalink to this heading">¶</a></h1>
+<span id="eqsql-db-tools-module"></span><h1>eqsql.db_tools module<a class="headerlink" href="#module-eqsql.db_tools" title="Link to this heading">¶</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.db_tools.init_eqsql_db">
-<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">init_eqsql_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_db_sql_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.init_eqsql_db" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">init_eqsql_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create_db_sql_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.init_eqsql_db" title="Link to this definition">¶</a></dt>
 <dd><p>Creates and initialized an EQSQL postgresql database.</p>
 <dl class="simple">
 <dt>This will:</dt><dd><ol class="arabic simple">
@@ -68,12 +64,12 @@ specified file.</p></li>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>db_path</strong> (<em>str</em>) – the file path for the database cluster. This must not exist.</p></li>
-<li><p><strong>create_db_sql_file</strong> (<em>Optional</em><em>[</em><em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em><em>]</em>) – a file containing the SQL to execute to create the database tables etc.
+<li><p><strong>create_db_sql_file</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – a file containing the SQL to execute to create the database tables etc.
 If this is None (the default) the default EQSQL SQL schema will be used.</p></li>
 <li><p><strong>db_user</strong> (<em>str</em>) – the database user name</p></li>
 <li><p><strong>db_name</strong> (<em>str</em>) – the name of the database</p></li>
 <li><p><strong>db_port</strong> – the port of the database server.</p></li>
-<li><p><strong>pg_bin_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the path to postgresql’s bin directory (i.e. the directory that contains
+<li><p><strong>pg_bin_path</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – the path to postgresql’s bin directory (i.e. the directory that contains
 the pg_ctl, createuser and createdb executables)</p></li>
 </ul>
 </dd>
@@ -82,7 +78,7 @@ the pg_ctl, createuser and createdb executables)</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.db_tools.reset_db">
-<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">reset_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.reset_db" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">reset_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'eqsql_user'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ_SQL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.reset_db" title="Link to this definition">¶</a></dt>
 <dd><p>Resets the database by deleting the contents of all the eqsql tables and restarting
 the emews task id generator sequence.</p>
 <dl class="field-list simple">
@@ -91,8 +87,8 @@ the emews task id generator sequence.</p>
 <li><p><strong>db_user</strong> (<em>str</em>) – the database user name</p></li>
 <li><p><strong>db_name</strong> (<em>str</em>) – the name of the database</p></li>
 <li><p><strong>db_host</strong> (<em>str</em>) – the hostname where the database server is located</p></li>
-<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port of the database server.</p></li>
-<li><p><strong>db_password</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>db_port</strong> (<em>int</em>) – the port of the database server.</p></li>
+<li><p><strong>db_password</strong> (<em>str</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -100,15 +96,15 @@ the emews task id generator sequence.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.db_tools.start_db">
-<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">start_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.start_db" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">start_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.start_db" title="Link to this definition">¶</a></dt>
 <dd><p>Starts the postgresql database cluster on the specified path</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>db_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the file path for the database cluster to start</p></li>
-<li><p><strong>pg_bin_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – path to postgresql’s bin directory (i.e. the directory that contains
+<li><p><strong>db_path</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – the file path for the database cluster to start</p></li>
+<li><p><strong>pg_bin_path</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – path to postgresql’s bin directory (i.e. the directory that contains
 the pg_ctl executable)</p></li>
-<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port number to start the db on</p></li>
+<li><p><strong>db_port</strong> (<em>int</em>) – the port number to start the db on</p></li>
 </ul>
 </dd>
 </dl>
@@ -116,15 +112,15 @@ the pg_ctl executable)</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.db_tools.stop_db">
-<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">stop_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.stop_db" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.db_tools.</span></span><span class="sig-name descname"><span class="pre">stop_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pg_bin_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.db_tools.stop_db" title="Link to this definition">¶</a></dt>
 <dd><p>Stops the postgresql database cluster on the specified path</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>db_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the file path for the database cluster to stop</p></li>
-<li><p><strong>pg_bin_path</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – path to postgresql’s bin directory (i.e. the directory that contains
+<li><p><strong>db_path</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – the file path for the database cluster to stop</p></li>
+<li><p><strong>pg_bin_path</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – path to postgresql’s bin directory (i.e. the directory that contains
 the pg_ctl executable)</p></li>
-<li><p><strong>db_port</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the port number of the database to stop</p></li>
+<li><p><strong>db_port</strong> (<em>int</em>) – the port number of the database to stop</p></li>
 </ul>
 </dd>
 </dl>
@@ -137,7 +133,7 @@ the pg_ctl executable)</p></li>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
@@ -169,7 +165,7 @@ the pg_ctl executable)</p></li>
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
@@ -177,13 +173,13 @@ the pg_ctl executable)</p></li>
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -204,8 +200,8 @@ the pg_ctl executable)</p></li>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, UChicago Argonne, LLC.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    &#169; Copyright 2023, UChicago Argonne, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     </div>
   </body>
 </html>

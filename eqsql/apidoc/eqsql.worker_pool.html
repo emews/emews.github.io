@@ -1,25 +1,21 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>eqsql.worker_pool module &#8212; EQ-SQL  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/nature.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=ad52900a" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="eqsql.proxies module" href="eqsql.proxies.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -43,10 +39,10 @@
           <div class="body" role="main">
             
   <section id="module-eqsql.worker_pool">
-<span id="eqsql-worker-pool-module"></span><h1>eqsql.worker_pool module<a class="headerlink" href="#module-eqsql.worker_pool" title="Permalink to this heading">¶</a></h1>
+<span id="eqsql-worker-pool-module"></span><h1>eqsql.worker_pool module<a class="headerlink" href="#module-eqsql.worker_pool" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="eqsql.worker_pool.LocalPool">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">LocalPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool" title="Permalink to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">LocalPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Encapsulates a locally running  EQSQL worker pool. LocalPool
 instances should <strong>only</strong> be created using <a class="reference internal" href="#eqsql.worker_pool.start_local_pool" title="eqsql.worker_pool.start_local_pool"><code class="xref py py-func docutils literal notranslate"><span class="pre">start_local_pool()</span></code></a>.</p>
@@ -61,7 +57,7 @@ instances should <strong>only</strong> be created using <a class="reference inte
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.worker_pool.LocalPool.cancel">
-<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool.cancel" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool.cancel" title="Link to this definition">¶</a></dt>
 <dd><p>Cancels this worker pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -72,7 +68,7 @@ instances should <strong>only</strong> be created using <a class="reference inte
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.worker_pool.LocalPool.status">
-<span class="sig-name descname"><span class="pre">status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool.status" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.LocalPool.status" title="Link to this definition">¶</a></dt>
 <dd><p>Gets the status (active, completed, or canceled) of this LocalPool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -95,11 +91,11 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py class">
 <dt class="sig sig-object py" id="eqsql.worker_pool.ScheduledPool">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">ScheduledPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool" title="Permalink to this definition">¶</a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">ScheduledPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.worker_pool.ScheduledPool.cancel">
-<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool.cancel" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool.cancel" title="Link to this definition">¶</a></dt>
 <dd><p>Cancels this worker pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -110,7 +106,7 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py method">
 <dt class="sig sig-object py" id="eqsql.worker_pool.ScheduledPool.status">
-<span class="sig-name descname"><span class="pre">status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool.status" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.ScheduledPool.status" title="Link to this definition">¶</a></dt>
 <dd><p>Gets the status (active, completed, or canceled) of this LocalPool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -130,11 +126,11 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.cfg_file_to_dict">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">cfg_file_to_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.cfg_file_to_dict" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">cfg_file_to_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.cfg_file_to_dict" title="Link to this definition">¶</a></dt>
 <dd><p>Reads a bash cfg file into a dictionary</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>cfg_file</strong> (<em>str</em>) – </p>
+<dd class="field-odd"><p><strong>cfg_file</strong> (<em>str</em>)</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>Dict</em></p>
@@ -144,10 +140,10 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.cfg_tofile">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">cfg_tofile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.cfg_tofile" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">cfg_tofile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.cfg_tofile" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>cfg_params</strong> (<em>Dict</em>) – </p>
+<dd class="field-odd"><p><strong>cfg_params</strong> (<em>Dict</em>)</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>str</p>
@@ -157,12 +153,12 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.format_pool_exp_id">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">format_pool_exp_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.format_pool_exp_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">format_pool_exp_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.format_pool_exp_id" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>exp_id</strong> (<em>str</em>) – </p></li>
-<li><p><strong>name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>exp_id</strong> (<em>str</em>)</p></li>
+<li><p><strong>name</strong> (<em>str</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -170,14 +166,14 @@ attribute set appropriately - <code class="docutils literal notranslate"><span c
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.start_local_pool">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_local_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_local_pool" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_local_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_local_pool" title="Link to this definition">¶</a></dt>
 <dd><p>Starts a local worker pool and returns the LocalPool instance encapsulating
 that worker pool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<em>str</em>) – the name of the worker pool</p></li>
-<li><p><strong>launch_script</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the path to an executable script used to start the worker pool</p></li>
+<li><p><strong>launch_script</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – the path to an executable script used to start the worker pool</p></li>
 <li><p><strong>exp_id</strong> (<em>str</em>) – the experiment id for the experiment that is running the pool</p></li>
 <li><p><strong>cfg_params</strong> (<em>Dict</em>) – the parameters used to start the pool</p></li>
 </ul>
@@ -193,14 +189,14 @@ that worker pool.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="eqsql.worker_pool.start_scheduled_pool">
-<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_scheduled_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_scheduled_pool" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">eqsql.worker_pool.</span></span><span class="sig-name descname"><span class="pre">start_scheduled_pool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">launch_script</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exp_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gcx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#eqsql.worker_pool.start_scheduled_pool" title="Link to this definition">¶</a></dt>
 <dd><p>Starts a worker pool on a scheduled resource, i.e., a resource that queues jobs
 using some sort of scheduler, e.g., slurm.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<em>str</em>) – the name of the worker pool</p></li>
-<li><p><strong>launch_script</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>bytes</em><em>, </em><em>PathLike</em><em>]</em>) – the path to an executable script used to start the worker pool</p></li>
+<li><p><strong>launch_script</strong> (<em>str</em><em> | </em><em>bytes</em><em> | </em><em>PathLike</em>) – the path to an executable script used to start the worker pool</p></li>
 <li><p><strong>exp_id</strong> (<em>str</em>) – the experiment id for the experiment that is running the pool</p></li>
 <li><p><strong>cfg_params</strong> (<em>Dict</em>) – the parameters used to start the pool</p></li>
 <li><p><strong>scheduler</strong> (<em>str</em>) – scheduled resource schedule type - slurm, etc.</p></li>
@@ -222,7 +218,7 @@ this is not None, then the executor will be used to launch the pool remotely.</p
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
@@ -260,7 +256,7 @@ this is not None, then the executor will be used to launch the pool remotely.</p
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
@@ -268,13 +264,13 @@ this is not None, then the executor will be used to launch the pool remotely.</p
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -292,8 +288,8 @@ this is not None, then the executor will be used to launch the pool remotely.</p
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2023, UChicago Argonne, LLC.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    &#169; Copyright 2023, UChicago Argonne, LLC.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     </div>
   </body>
 </html>
